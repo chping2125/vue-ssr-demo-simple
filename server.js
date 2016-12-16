@@ -41,7 +41,7 @@ server.get('*', function (request, response) {
           .status(500)
           .send('Server Error')
       }
-      // 发送布局和HTML文件给客户端
+      // 发送布局和HTML文件给客户端，此时已经拼接好 HTML 模板
       response.send(layout.replace('<div id="app"></div>', html))
     }
   )
