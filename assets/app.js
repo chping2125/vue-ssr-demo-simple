@@ -1,14 +1,11 @@
 (function () { 'use strict'
   var createApp = function () {
     // ---------------------
-    // BEGIN NORMAL APP CODE
+    // 开始常用的应用代码
     // ---------------------
-
-    // Main Vue instance must be returned and have a root
-    // node with the id "app", so that the client-side
-    // version can take over once it loads.
+    // 主要的Vue实例必须返回，并且有一个根节点在id "app"上，这样客户端可以加载它。
     return new Vue({
-      template: '<div id="app">You have been here for {{ counter }} seconds.</div>',
+      template: '<div id="app">你已经在这花了 {{ counter }} 秒。</div>',
       data: {
         counter: 0
       },
@@ -19,9 +16,8 @@
         }, 1000)
       }
     })
-
     // -------------------
-    // END NORMAL APP CODE
+    // 结束常用的应用代码
     // -------------------
   }
   if (typeof module !== 'undefined' && module.exports) {
